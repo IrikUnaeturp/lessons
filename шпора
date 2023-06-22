@@ -1,0 +1,13 @@
+shift + alt + arrow == duplicate row
+
+
+console:
+control + ~   (в английской  раскладке) ==  открытие  консоли
+node + filename
+comand + N == new tab;comad + s= save and name the tab
+ctrl + P  == open file  that  exist
+console.log(x)-answer
+comand+/==set the  sring unvisible 
+
+comand + shift + 3 == "полный скриншот"
+comand + shift + 4 == "скриншот определенного куска экрана"
