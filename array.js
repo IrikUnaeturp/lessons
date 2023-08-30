@@ -27,19 +27,20 @@
 // console.log(sum)
 
 //задача 5
-function getMaxSubSum(arr) {
-    let sum = 0;
-    let sums = []
-    for (let num of arr) {
-      if (num > 0 || (num < 0 && Math.abs(num) < sum)) {
-        sum += num;
-      } else {
-        sum = 0;
-      };
-      sums.push(sum);
-    };
-    sums.push(sum)
-    return Math.max(...sums);
-}
+// function getMaxSubSum(arr) {
+//     let sum = 0;
+//     let sums = []
+//     for (let num of arr) {
+//       if (num > 0 || (num < 0 && Math.abs(num) < sum)) {
+//         sum += num;
+//       } else {
+//         sum = 0;
+//       };
+//       sums.push(sum);
+//     };
+//     sums.push(sum)
+//     return Math.max(...sums);
+// }
 
-console.log(getMaxSubSum([2, -1, 2, 3, -9]))
+// console.log(getMaxSubSum([2, -1, 2, 3, -9]))
+

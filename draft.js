@@ -59,6 +59,7 @@
 // multiplyNumeric(menu)
 // console.log(menu)
 
-console.log(9999999999999999)
-console.log('10')
-console.log ('17')
+let x = [1,2,3,4]
+let y = x.splice(",")
+console.log(y)
+console.log(x)
