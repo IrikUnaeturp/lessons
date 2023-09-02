@@ -112,11 +112,77 @@
 // console.log( usersMapped[0].fullName ) // Вася Пупкин
 
 //задача 9
-let arr = [1, 2, 3];
-function shuffle(){
-    return arr.sort(()=>Math.random()-0.5)
-}
+// let arr = [1, 2, 3];
+// function shuffle(){
+//     return arr.sort(()=>Math.random()-0.5)
+// }
 
-console.log(shuffle(arr))
-console.log(shuffle(arr))
-console.log(shuffle(arr))
+// console.log(shuffle(arr))
+// console.log(shuffle(arr))
+// console.log(shuffle(arr))
+
+// задача 10
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 29 };
+
+// let arr = [ vasya, petya, masha ];
+
+// function getAverageAge(){
+    
+//     return arr.reduce ((sum, current) => (sum + current.age), 0)/arr.length 
+
+// }
+// console.log( getAverageAge(arr) )
+
+//задача 11
+
+// let arr = ["кришна", "кришна", "харе", "харе",
+//     "харе", "харе", "кришна", "кришна", ":-O"
+//   ];
+  
+//   function unique() {
+//     let result = [];
+
+//     for (let str of arr) {
+//       if (!result.includes(str)) {
+//         result.push(str);
+//       }
+//     }
+  
+//     return result;
+//   }
+  
+//   console.log(unique( arr )); // кришна, харе, :-O
+
+//задача 12
+// let users = [
+//     {id: 'john', name: "John Smith", age: 20},
+//     {id: 'ann', name: "Ann Smith", age: 24},
+//     {id: 'pete', name: "Pete Peterson", age: 31},
+//   ];
+//   function groupById(){
+//     return  users.reduce((obj,value)=>{
+//         obj[value.id] = value
+//         return obj
+//     }, {})
+//   }
+//   let usersById = groupById(users);
+  
+//   console.log(usersById)
+
+//задача 13
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+
+let arr = [ vasya, petya, masha ];
+function sortByAge(){
+    return arr.sort((a,b)=> a.age>b.age?1:-1,0)
+}
+sortByAge(arr);
+
+// теперь: [vasya, masha, petya]
+console.log(arr[0].name); // Вася
+console.log(arr[1].name); // Маша
+console.log(arr[2].name); // Петя
