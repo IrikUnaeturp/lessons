@@ -23,6 +23,15 @@
 //     console.log(i)
 // }
 
+// let shoko = "шоколадки"
+// let banan = 2
+// if(banan>0){
+//     console.log(4 +" " +shoko)
+// }
+// else {
+//     console.log("шоколадка")
+// }
+
 
 // const schedule = {};
 // function isEmpty(obj) { 
@@ -59,7 +68,12 @@
 // multiplyNumeric(menu)
 // console.log(menu)
 
-let x = [1,2,3,4]
-let y = x.splice(",")
-console.log(y)
-console.log(x)
+// let x = [1,2,3,4]
+// let y = x.splice(",")
+// console.log(y)
+// console.log(x)
+
+let str = '𝒳😂';
+for (let char of str) {
+    console.log( char ); // 𝒳, а затем 😂
+}
