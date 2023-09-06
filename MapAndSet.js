@@ -28,7 +28,7 @@ let map = new Map();
 
 map.set("name", "John");
 
-let keys = Array.from(map.keys());
+let keys = Array.from(map.keys());//добавилаArray.from, потому что  keys не был массивом
 
 keys.push("more");
 console.log(keys)
