@@ -25,19 +25,41 @@
 // };
 
 //Apply Transform Over Each Element in Array
-let arr =[1,2,3,4]
-let fn = function moreThan10(n) { return n > 10; }
-let filter = function(arr, fn) {
-   let newArr = []
-   for(let i = 0;i<arr.length;i++) {
-    if(fn(arr[i],i)) {
-        newArr.push(arr[i]);
-   }
-   }
-   return newArr;
+// let arr =[1,2,3,4]
+// let fn = (element, index) => {
+//    return element * 2; 
+//  };
+// function map () {
+//    let i=0, result = [];
+//    for(let num of arr)
+//        if(fn(num, i++))
+//            result.push(fn(num,  i- 1));
+//    return result;
+// };
+//   console.log(arr)
+//   console.log(map(arr,fn))
+let arr = [1, 2, 3, 4];
+
+// Define a function that takes two arguments (element and index)
+let fn = (element, index) => {
+  return element * 2; // Example: double the element
 };
-  console.log(arr)
-  console.log(filter())
+
+function customMap(arr, fn) {
+  let i = 0,
+    result = [];
+  for (let num of arr)
+    if (fn(num, i++))
+      result.push(fn(num, i - 1)); // Apply the function and push the result
+  return result;
+}
+
+console.log(arr);
+console.log(customMap(arr, fn));
+
+
+
+
 
 
 // expect(5).toBe(5); // true
