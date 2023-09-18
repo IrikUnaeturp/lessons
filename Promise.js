@@ -1,17 +1,17 @@
-//задача 1
-// let promise = new Promise(function(resolve, reject) {
-//     resolve(1);
+// задача 1
+let promise = new Promise(function(resolve, reject) {
+    resolve(1);
   
-//     setTimeout(() => resolve(2), 1000);
-//   });
+    setTimeout(() => resolve(2), 1000);
+  });
   
-//   promise.then(console.log);
-//задача 2
-// let ms = 3000
-// function delay() {
-//    return new Promise (resolve => setTimeout(resolve,ms))
-//   }
-//   delay(ms).then(() => console.log('выполнилось через 3 секунды'));
+  promise.then(console.log);
+// задача 2
+let ms = 3000
+function delay() {
+   return new Promise (resolve => setTimeout(resolve,ms))
+  }
+  delay(ms).then(() => console.log('выполнилось через 3 секунды'));
 
 //задача 3
 
